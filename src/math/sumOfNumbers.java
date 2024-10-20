@@ -11,9 +11,9 @@ public class SumOfNumbers {
 
     /**
      * Invoke SumOfNumbers Solution
-     * @param a
-     * @param b
-     * @return 
+     * @param a first number
+     * @param b second number
+     * @return sum of all integers between a and b
      */
     public int solve(int a, int b) {
         int sum = 0;

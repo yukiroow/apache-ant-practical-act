@@ -15,7 +15,7 @@ public class IsNumberPrime {
     /**
      * Invoke IsNumberPrime Solution
      * @param num
-     * @return 
+     * @return boolean value
      */
     public static boolean solve(int num) {
 

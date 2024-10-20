@@ -14,9 +14,9 @@ package math;
 public class BinaryAddition {
     /**
      * Invoke BinaryAddition Solution
-     * @param a
-     * @param b
-     * @return 
+     * @param a first integer to add
+     * @param b second integer to add
+     * @return Binary form of the sum
      */
     public static String solve(int a, int b) {
 

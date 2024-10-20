@@ -19,8 +19,8 @@ public class SquareSums {
   /**
    * Invoke SquareSums Solution
    * 
-   * @param n
-     * @return 
+   * @param n the upper limit for path elements
+   * @return an array representing the path or null if no path exists
    */
   public static int[] solve(int n) {
     if (n < 2 || n > 43)
@@ -63,9 +63,9 @@ public class SquareSums {
   /**
    * Depth-first Search Implementation
    * 
-   * @param path
-   * @param n
-     * @return 
+   * @param path the current path of integers
+   * @param n upper limit for path length
+   * @return true if a valid path is found
    */
   private static boolean dfs(List<Integer> path, boolean[] used, int n) {
     if (path.size() == n) {

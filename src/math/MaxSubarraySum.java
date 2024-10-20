@@ -12,8 +12,8 @@ package math;
 public class MaxSubarraySum {
     /**
      * Invoke MaxSubarraySum Solution
-     * @param arr
-     * @return 
+     * @param arr array of integers
+     * @return maximum sum of any contiguous subarray within the given array
      */
     public static int solve(int[] arr) {
         int max = 0;

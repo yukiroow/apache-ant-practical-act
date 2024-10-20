@@ -9,8 +9,8 @@ import java.util.Arrays;
 public class MinMaxArray {
     /**
      * Invoke MinMaxArray Solution
-     * @param arr
-     * @return 
+     * @param arr  an array of integers
+     * @return array of two integers (min and max values)
      */
     public static int[] solve(int[] arr) {
         Arrays.sort(arr);

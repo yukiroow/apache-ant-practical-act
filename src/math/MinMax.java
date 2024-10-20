@@ -6,8 +6,8 @@ import java.util.List;
 public class MinMax {
     /**
      * Invoke MinMax Solution
-     * @param list
-     * @return 
+     * @param list list of integers
+     * @return an array of two integers (minimum and maximum values)
      */
     public static int[] solve(List<Integer> list) {
         int min = Integer.MAX_VALUE;
