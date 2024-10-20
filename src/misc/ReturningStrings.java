@@ -9,8 +9,8 @@ package misc;
 public class ReturningStrings {
     /**
      * Invoke ReturningStrings Solution
-     * @param name
-     * @return 
+     * @param name name of the person to greet
+     * @return string containing the greeting statement
      */
     public static String greet(String name) {
         String reply = "Hello, " + name + " how are you doing today?";

@@ -12,7 +12,7 @@ public class Hero {
 
   /**
    * Construct a Hero with a name
-     * @param name
+     * @param name name of the hero
    */
   public Hero(String name) {
     this.name = name;

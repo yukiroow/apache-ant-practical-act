@@ -9,9 +9,9 @@ package misc;
 public class GoodVsEvil {
   /**
    * Invoke GoodVsEvil Solution
-     * @param goodAmounts
-     * @param evilAmounts
-     * @return 
+   * @param goodAmounts amounts of each race on the side of good
+   * @param evilAmounts amounts of each race on the side of evil
+   * @return string
    */
   public static String battle(String goodAmounts, String evilAmounts) {
     int goodScore = 0;
