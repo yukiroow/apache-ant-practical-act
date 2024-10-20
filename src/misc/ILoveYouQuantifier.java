@@ -10,8 +10,8 @@ package misc;
 public class ILoveYouQuantifier {
     /**
      * Invoke ILoveYouQuantifier Solution
-     * @param nb_petals
-     * @return 
+     * @param nb_petals number of petals on the flower
+     * @return string representing the phrase corresponding to the last petal
      */
     public static String howMuchILoveYou(int nb_petals) {
 
