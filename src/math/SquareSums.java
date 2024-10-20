@@ -1,0 +1,77 @@
+package math;
+
+/**
+	[5 Kyu]
+	Write function square_sums_row ( or squareSumsRow or SquareSumsRow ) that, given integer 
+	number N (in range 2..43), returns array of integers 1..N arranged in a way, so sum of 
+	each 2 consecutive numbers is a square.
+	
+	Solution is valid if and only if following two criterias are met:
+		Each number in range 1..N is used once and only once.
+		Sum of each 2 consecutive numbers is a perfect square.	
+*/
+import java.util.*;
+
+public class SquareSums {
+  private static Set<Integer> squares = new HashSet<>();
+  private static List<List<Integer>> graph;
+
+  public static int[] squareSumsRow(int n) {
+    if (n < 2 || n > 43)
+      return null;
+
+    // Precompute squares
+    for (int i = 1; i * i <= 2 * n; i++) {
+      squares.add(i * i);
+    }
+
+    // Build graph
+    graph = new ArrayList<>(n + 1);
+    for (int i = 0; i <= n; i++) {
+      graph.add(new ArrayList<>());
+    }
+    for (int i = 1; i <= n; i++) {
+      for (int j = i + 1; j <= n; j++) {
+        if (squares.contains(i + j)) {
+          graph.get(i).add(j);
+          graph.get(j).add(i);
+        }
+      }
+    }
+
+    // Try to find a path
+    boolean[] used = new boolean[n + 1];
+    for (int start = 1; start <= n; start++) {
+      List<Integer> path = new ArrayList<>();
+      path.add(start);
+      used[start] = true;
+      if (dfs(path, used, n)) {
+        return path.stream().mapToInt(Integer::intValue).toArray();
+      }
+      used[start] = false;
+    }
+
+    return null;
+  }
+
+  private static boolean dfs(List<Integer> path, boolean[] used, int n) {
+    if (path.size() == n) {
+      return true;
+    }
+
+    int last = path.get(path.size() - 1);
+    for (int next : graph.get(last)) {
+      if (!used[next]) {
+        path.add(next);
+        used[next] = true;
+        if (dfs(path, used, n)) {
+          return true;
+        }
+        path.remove(path.size() - 1);
+        used[next] = false;
+      }
+    }
+
+    return false;
+  }
+}
