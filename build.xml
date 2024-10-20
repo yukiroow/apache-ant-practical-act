@@ -62,4 +62,13 @@
              </bottom>
         </javadoc>
     </target>
+
+    <target name="jar.javadoc" depends>
+        <jar destfile="build/production/team3-documentation.jar"
+            basedir="build/doc"
+            includes="build/doc/**"
+            excludes="build/**.class"
+            update="true"
+        />
+    </target>
 </project>
