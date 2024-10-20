@@ -2,13 +2,15 @@ package util;
 /**
  * Convert number to reversed array of digits
  * Given a random non-negative number, you have to return the digits of this
- * number
- * within an array in reverse order.
+ * number within an array in reverse order.
  * Example(Input => Output):
  * 35231 => [1,3,2,5,3]
  * 0 => [0]
  */
-public class ReversedDigits {
+public static class ReversedDigits {
+    /**
+     * Invoke ReversedDigits Solution
+     */
     public static int[] digitize(long n) {
         String str = Long.toString(n);
 

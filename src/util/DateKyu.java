@@ -3,9 +3,8 @@ package util;
  * This Class contains different CodeWars Katas that are related
  * to Dates and Time one way or another,
  */
-public class DateKyu {
+public static class DateKyu {
     /**
-     * [8 kyu]
      * I have a cat and a dog. I got them at the same time as kitten/puppy. That was
      * humanYears years ago.
      * Return their respective ages now as [humanYears,catYears,dogYears]
@@ -32,7 +31,6 @@ public class DateKyu {
     }
 
     /**
-     * [6 Kyu]
      * Return the century of the input year. The input will always be a 4 digit
      * string, so there is no need for validation.
      */
@@ -41,6 +39,9 @@ public class DateKyu {
         return year % 100 == 0 ? century - 1 + getEnding(century - 1) : century + getEnding(century);
     }
 
+    /**
+     * Get the ending characters for the specified year
+     */
     private static String getEnding(int century) {
         int lastDigit = century % 10;
         switch (century) {
@@ -65,7 +66,6 @@ public class DateKyu {
     }
 
     /**
-     * [7 kyu]
      * The Chinese zodiac is a repeating cycle of 12 years, with each year being
      * represented by an animal and its reputed attributes. The lunar calendar is
      * divided into
@@ -92,7 +92,6 @@ public class DateKyu {
     }
 
     /**
-     * 6th Kyu
      * Instructions: The cuckoo bird pops out of the cuckoo clock and chimes once on
      * the quarter hour, half hour, and three-quarter hour. At the beginning of each
      * hour (1-12), it chimes out the hour. Given the current time and a number n,
@@ -157,7 +156,6 @@ public class DateKyu {
     }
 
     /**
-     * 7th kyu
      * Instructions: you should simply determine, whether a given year is a leap
      * year or not.
      * In case you don't know the rules, here they are:
