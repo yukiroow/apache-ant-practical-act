@@ -6,7 +6,6 @@ package math;
  * and including them and return it. If the two numbers
  * are equal return a or b.
  */
-
 public class SumOfNumbers {
 
     /**

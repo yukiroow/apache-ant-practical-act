@@ -1,4 +1,6 @@
 package math;
+
+import java.util.Stack;
 /**
  * Given a mathematical expression as a string you must return the result as a number.
  *
@@ -42,9 +44,6 @@ package math;
  * Restricted APIs
  * NOTE: To keep up the difficulty of the kata, use of some classes and functions is disallowed. Their names cannot appear in the solution file, even in comments and variable names.
  */
-
-import java.util.Stack;
-
 public class MathEvaluator {
     /**
      * Invoke MathEvaluator Solution

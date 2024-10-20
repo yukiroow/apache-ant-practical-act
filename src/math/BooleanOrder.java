@@ -1,24 +1,16 @@
 package math;
+import java.math.BigInteger;
 
 /**
  * In this Kata, you will be given boolean values and boolean operators. Your task will be to return the number of
  * arrangements that evaluate to True.
- *
- * t,f will stand for true, false and the operators will be Boolean AND (&), OR (|), and XOR (^).
- *
- * For example, solve("tft","^&") = 2, as follows:
- *
- * "((t ^ f) & t)" = True
- * "(t ^ (f & t))" = True
  * Notice that the order of the boolean values and operators does not change. What changes is the position of braces.
  */
-import java.math.BigInteger;
-
 public class BooleanOrder {
     /**
      * Invoke Boolean Order Solution
-     * @param operands string of boolean values ('t' or 'f')
-     * @param operators string of logical operators ('&', '|', '^') applied between the operands
+     * @param operands string of boolean values
+     * @param operators string of logical operators applied between the operands
      * @return number of ways to parenthesize the expression to make it evaluate to true
      */
     public static BigInteger solve(String operands, String operators) {

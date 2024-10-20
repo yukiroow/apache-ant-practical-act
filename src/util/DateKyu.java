@@ -104,9 +104,6 @@ public class DateKyu {
      * the quarter hour, half hour, and three-quarter hour. At the beginning of each
      * hour (1-12), it chimes out the hour. Given the current time and a number n,
      * determine the time when the cuckoo bird has chimed n times.
-     * Input Parameters: initial_time - a string in the format "HH:MM", where 1 ≤ HH
-     * ≤ 12 and 0 ≤ MM ≤ 59, with leading 0’s if necessary.
-     * n - an integer representing the target number of chimes, with 1 <= n <= 200.
      * Return Value: The time when the cuckoo bird has chimed n times - a string in
      * the same format as initial_time.
      * If the cuckoo bird chimes at initial_time, include those chimes in the count.
@@ -186,9 +183,6 @@ public class DateKyu {
      * For example: month 2 (February), is part of the first quarter; month 6
      * (June), is part of the second quarter;
      * and month 11 (November), is part of the fourth quarter.
-     * 
-     * Constraint:
-     * 1 <= month <= 12
      * @param month month input
      * @return quarter of the month
      */

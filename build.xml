@@ -31,7 +31,7 @@
 
     <!-- Generate a Javadoc HTML Documentation -->
     <target name="doc" depends="init" description="Generate Documentation">
-        <javadoc destdir="${docspath}" sourcepath="${sourcepath}" packagenames="."
+        <javadoc destdir="${docspath}" sourcepath="${sourcepath}"
             windowtitle="Team 3 Source Codes">
             <doctitle><![CDATA[= Team 3 Source Codes =]]></doctitle>
             <bottom>
