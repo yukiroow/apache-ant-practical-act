@@ -7,7 +7,7 @@ package string;
  * We will consider a, e, i, o, u as vowels for this Kata (but not y).
  * The input string will only consist of lower case letters and/or spaces.
  */
-public class vowelCount {
+public class VowelCount {
     public static int getCount(String str) {
         int vowelcount = 0;
         String vowels = "aeiou";

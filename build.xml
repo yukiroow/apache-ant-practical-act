@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<project name="9472-Team03_Kotlin_MidAct02-Ant" default="javadoc.package">
+    <target name="init">
+        <echo>9472 App Development Team 3: Kotlin</echo>
+        <echo>Midterm Lab Activity 2</echo>
+        <mkdir dir="build" />
+        <mkdir dir="build\production" />
+    </target>
+
+    <!-- 
+    If input is 'y', compile all classes and respective documentation.
+    Otherwise, prompt user again to select which package to compile.
+     -->
+    <target name="readmode" depends="init">
+        <input message="Would you like to compile all the classes or only a package?"
+            validargs="all,package"
+            addproperty="compile.mode" />
+
+        <condition property="is.all">
+            <equals arg1="${compile.mode}" arg2="all" />
+        </condition>
+
+        <condition property="is.package">
+            <equals arg1="${compile.mode}" arg2="package" />
+        </condition>
+    </target>
+
+    <target name="compile.all" depends="readmode" if="is.all">
+        <javac srcdir="src" destdir="build" includes="**/*.java" />
+        <javac srcdir="src" destdir="build" includes="Main.java" />
+    </target>
+
+    <target name="compile.package" depends="compile.all" if="is.package">
+        <input message="Please enter the package name: "
+            validargs="math,misc,string,util"
+            addproperty="package.name" />
+        <javac srcdir="src/${package.name}" destdir="build" includes="**/*.java" />
+        <javac srcdir="src" destdir="build" includes="Main.java" />
+    </target>
+
+    <target name="javadoc.all" depends="compile.package" if="is.all">
+        <javadoc destdir="build/docs" sourcepath="src" packagenames="."
+            windowtitle="Team 3 Source Codes">
+            <doctitle><![CDATA[= Team 3 Source Codes =]]></doctitle>
+            <group title="math packages" packages="math" />
+            <group title="misc packages" packages="misc" />
+            <group title="string packages" packages="string" />
+            <group title="util packages" packages="util" />
+            <bottom>
+                <![CDATA[Copyright © 2024. All Rights Reserved.]]>
+             </bottom>
+        </javadoc>
+    </target>
+
+    <target name="javadoc.package" depends="javadoc.all" if="is.package">
+        <javadoc destdir="build/docs" sourcepath="src" packagenames="${package.name}"
+            windowtitle="Team 3 Source Codes">
+            <doctitle><![CDATA[= Team 3 Source Codes =]]></doctitle>
+            <group title="${package.name} packages" packages="${package.name}" />
+            <bottom>
+                <![CDATA[Copyright © 2024. All Rights Reserved.]]>
+             </bottom>
+        </javadoc>
+    </target>
+</project>

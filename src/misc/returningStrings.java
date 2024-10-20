@@ -8,7 +8,7 @@ package misc;
  * [Make sure you type the exact thing I wrote or the program may not execute
  * properly]
  */
-public class returningStrings {
+public class ReturningStrings {
     public static String greet(String name) {
         // Your code here
         String reply = "Hello, " + name + " how are you doing today?";

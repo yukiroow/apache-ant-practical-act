@@ -15,7 +15,7 @@ package string;
  * consecutive numbers.
  */
 
-public class yourOrderPlease {
+public class YourOrderPlease {
     public static String order(String words) {
         // ...
         if (words == null || words.isEmpty()) {
