@@ -11,8 +11,8 @@ public class DateKyu {
      * NOTES:
      * humanYears >= 1
      * humanYears are whole numbers only
-     * @param humanYears
-     * @return 
+     * @param humanYears Human Years to convert
+     * @return Results in an int Array
      */
     public static int[] humanYearsToCatYearsAndDogYears(final int humanYears) {
         int catYears = 0;
@@ -35,8 +35,8 @@ public class DateKyu {
     /**
      * Return the century of the input year. The input will always be a 4 digit
      * string, so there is no need for validation.
-     * @param year
-     * @return 
+     * @param year year to get the century of
+     * @return century of the year
      */
     public static String whatCentury(int year) {
         int century = (year / 100) + 1;
@@ -45,8 +45,8 @@ public class DateKyu {
 
     /**
      * Get the ending characters for the specified year
-     * @param century
-     * @return 
+     * @param century century to get the ending of
+     * @return ending characters of the century
      */
     private static String getEnding(int century) {
         int lastDigit = century % 10;
@@ -85,8 +85,8 @@ public class DateKyu {
      * years from the epoch 1924. For simplicity I am counting the year as a whole
      * year and not
      * from January/February to the end of the year.
-     * @param year
-     * @return 
+     * @param year input year
+     * @return animal year
      */
     public static String chineseZodiac(int year) {
         String[] animal = { "Rat", "Ox", "Tiger", "Rabbit", "Dragon", "Snake", "Horse", "Goat", "Monkey", "Rooster",
@@ -112,9 +112,9 @@ public class DateKyu {
      * If the cuckoo bird chimes at initial_time, include those chimes in the count.
      * If the nth chime is reached on the hour, report the time at the start of that
      * hour (i.e. assume the cuckoo finishes chiming before the minute is up).
-     * @param inputTime
-     * @param chimes
-     * @return 
+     * @param inputTime input time
+     * @param chimes number of chimes
+     * @return time in String format
      */
     public static String cuckooClock(String inputTime, int chimes) {
         String[] timeParts = inputTime.split(":");
@@ -173,8 +173,8 @@ public class DateKyu {
      * Years divisible by 4 are leap years,
      * but years divisible by 100 are not leap years,
      * but years divisible by 400 are leap years.
-     * @param year
-     * @return 
+     * @param year input year
+     * @return boolean if input is a leap year
      */
     public static boolean isLeapYear(int year) {
         return year % 100 == 0 ? year % 400 == 0 : year % 4 == 0;
@@ -189,8 +189,8 @@ public class DateKyu {
      * 
      * Constraint:
      * 1 <= month <= 12
-     * @param month
-     * @return 
+     * @param month month input
+     * @return quarter of the month
      */
     public static int getQuarterOfYear(int month) {
         if (month <= 3) {

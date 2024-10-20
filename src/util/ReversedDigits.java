@@ -10,8 +10,8 @@ package util;
 public class ReversedDigits {
     /**
      * Invoke ReversedDigits Solution
-     * @param n
-     * @return 
+     * @param n input number
+     * @return int array of digits in reversed order
      */
     public static int[] digitize(long n) {
         String str = Long.toString(n);

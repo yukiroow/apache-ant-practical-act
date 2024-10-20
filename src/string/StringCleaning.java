@@ -9,8 +9,8 @@ package string;
 public class StringCleaning {
   /**
    * Invoke StringCleaning Solution
-     * @param text
-     * @return 
+     * @param text input text
+     * @return cleaned text
    */
   static String stringClean(final String text) {
     return text.replaceAll("\\d", "");

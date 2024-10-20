@@ -9,8 +9,8 @@ import java.util.List;
 public class SplitStrings {
     /**
      * Invoke SplitStrings Solution
-     * @param s
-     * @return 
+     * @param s input string
+     * @return split String array
      */
     public static String[] solution(String s) {
         List<String> pairs = new ArrayList<>();

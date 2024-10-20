@@ -11,8 +11,8 @@ package string;
 public class CamelCase {
     /**
      * Invoke CamelCase Solution
-     * @param input
-     * @return 
+     * @param input input string
+     * @return result string
      */
     public static String camelCase(String input) {
 

@@ -19,8 +19,8 @@ package util;
 public class RangeExtractor {
     /**
      * Invoke RangeExtractor Solution
-     * @param arr
-     * @return 
+     * @param arr input array
+     * @return range in String format
      */
     public static String solve(int[] arr) {
 

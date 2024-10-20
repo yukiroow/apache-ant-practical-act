@@ -16,8 +16,8 @@ package string;
 public class YourOrderPlease {
     /**
      * Invoke YourOrderPlease Solution
-     * @param words
-     * @return 
+     * @param words input words
+     * @return sorted string
      */
     public static String order(String words) {
         // ...

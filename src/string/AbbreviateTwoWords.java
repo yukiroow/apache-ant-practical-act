@@ -7,8 +7,8 @@ package string;
 public class AbbreviateTwoWords {
     /**
      * Invoke AbbreviateTwoWords Solution
-     * @param name
-     * @return 
+     * @param name input name
+     * @return abbreviated words
      */
     public static String abbrevName(String name) {
         String[]  words = name.split(" ");

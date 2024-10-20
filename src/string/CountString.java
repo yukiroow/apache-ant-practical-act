@@ -7,9 +7,9 @@ package string;
 public class CountString {
     /**
      * Invoke CountString Solution
-     * @param str
-     * @param letter
-     * @return 
+     * @param str input string
+     * @param letter query character
+     * @return occurrences
      */
     public static int strCount(String str, char letter) {
         int count = 0;

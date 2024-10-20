@@ -8,8 +8,8 @@ package string;
 public class FirstNonRepeatingLetter {
     /**
      * Invoke FirstNonRepeatingLetter Solution
-     * @param s
-     * @return 
+     * @param s input string
+     * @return first non-repeating character
      */
     public static String firstNonRepeatingLetter(String s){
         String lowerCaseString = s.toLowerCase();

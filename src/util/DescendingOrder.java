@@ -13,8 +13,8 @@ import java.util.Collections;
 public class DescendingOrder {
     /**
      * Invoke DescendingOrder Solution
-     * @param num
-     * @return 
+     * @param num input number
+     * @return arranged digits
      */
     public static int sortDesc(final int num) {
 

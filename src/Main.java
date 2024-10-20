@@ -4,6 +4,8 @@
 public class Main {
     /**
      * Main Method
+     * @param args program arguments
+     * @return result of solution
      */
     public static void main(String[] args) {
         System.out.println(

@@ -8,8 +8,8 @@ package string;
 public class VowelCount {
     /**
      * Invoke VowelCount Solution
-     * @param str
-     * @return 
+     * @param str input string
+     * @return no of vowels
      */
     public static int getCount(String str) {
         int vowelcount = 0;

@@ -8,8 +8,8 @@ package util;
 public class Multiples3or5 {
     /**
      * Invoke Multiples3or5 Solution
-     * @param number
-     * @return 
+     * @param number input number
+     * @return sum of all multiples of 3 or 5
      */
     public int solution(int number) {
         int multiple = 0;
