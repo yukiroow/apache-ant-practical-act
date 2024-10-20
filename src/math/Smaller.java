@@ -46,9 +46,9 @@ public class Smaller {
      * @param nums original array of integers
      * @param indices array of indices of the original array
      * @param result  array to store counts of smaller elements
-     * @param l left index of the subarray
+     * @param l the left index of the subarray
      * @param m the middle index
-     * @param r right index of the second half
+     * @param r the right index of the second half
      */
     private static void mergeAndCount(int[] nums, int[] indices, int[] result, int l, int m, int r) {
         int n1 = m - l + 1;

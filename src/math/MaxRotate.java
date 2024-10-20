@@ -12,8 +12,8 @@ package math;
 public class MaxRotate {
     /**
      * Invoke MaxRotate Solution
-     * @param n original number to be rotated and maximized
-     * @return  maximum value possible
+     * @param n the original number to be rotated and maximized
+     * @return maximum value possible
      */
     public static long solve(long n) {
 

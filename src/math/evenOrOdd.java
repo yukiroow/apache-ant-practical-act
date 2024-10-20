@@ -7,8 +7,8 @@ package math;
 public class EvenOrOdd {
     /**
      * Invoke EvenOrOdd Solution
-     * @param number
-     * @return Even or Odd
+     * @param number the input integer
+     * @return Even if the number is even or Odd if it is odd
      */
     public static String solve(int number) {
         if (number % 2 == 0) {

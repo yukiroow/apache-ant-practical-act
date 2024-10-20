@@ -64,7 +64,7 @@ public class SquareSums {
    * Depth-first Search Implementation
    * 
    * @param path the current path of integers
-   * @param n upper limit for path length
+   * @param n the upper limit for path length
    * @return true if a valid path is found
    */
   private static boolean dfs(List<Integer> path, boolean[] used, int n) {

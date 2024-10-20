@@ -17,9 +17,9 @@ import java.math.BigInteger;
 public class BooleanOrder {
     /**
      * Invoke Boolean Order Solution
-     * @param operands string of boolean values ('t' or 'f')
-     * @param operators string of logical operators ('&', '|', '^') applied between the operands
-     * @return number of ways to parenthesize the expression to make it evaluate to true
+     * @param operands a string of boolean values ('t' or 'f')
+     * @param operators a string of logical operators ('&', '|', '^') applied between the operands
+     * @return the number of ways to parenthesize the expression to make it evaluate to true
      */
     public static BigInteger solve(String operands, String operators) {
         int n = operands.length();
