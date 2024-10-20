@@ -7,7 +7,7 @@ package math;
  * return the amount of numbers that are smaller than arr[i] to the right.
  */
 public class Smaller {
-    public static int[] smaller(int[] unsorted) {
+    public static int[] solve(int[] unsorted) {
         int n = unsorted.length;
         int[] result = new int[n];
         int[] indices = new int[n];

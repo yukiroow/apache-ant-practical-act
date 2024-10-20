@@ -9,8 +9,8 @@ package math;
  * are equal return a or b.
  */
 
-public class sumOfNumbers {
-    public int GetSum(int a, int b)
+public class SumOfNumbers {
+    public int solve(int a, int b)
     {
         int sum = 0;
 

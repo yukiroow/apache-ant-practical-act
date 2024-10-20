@@ -9,7 +9,7 @@ package math;
 
 public class SumOfPositive {
 
-    public static int sum(int[] arr) {
+    public static int solve(int[] arr) {
         int total = 0;
         for (int num : arr) {
             if (num > 0) {
@@ -17,17 +17,5 @@ public class SumOfPositive {
             }
         }
         return total;
-    }
-
-    public static void main(String[] args) {
-
-        int[] array1 = {1, -4, 7, 12};
-        System.out.println("Sum of positives in array1: " + sum(array1));
-
-        int[] array2 = {-1, -2, -3, -4};
-        System.out.println("Sum of positives in array2: " + sum(array2));
-
-        int[] array3 = {0, 2, 4, -6, 8};
-        System.out.println("Sum of positives in array3: " + sum(array3));
     }
 }

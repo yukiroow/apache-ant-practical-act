@@ -12,11 +12,8 @@ package math;
  * Empty list is considered to have zero greatest sum. Note that the empty list or array is also a valid sublist/subarray.
  */
 
-public class Max {
-    public static int sequence(int[] arr) {
-
-        // using Kadane's Algorithm
-
+public class MaxSubarraySum {
+    public static int solve(int[] arr) {
         int max = 0;
         int total = 0;
 

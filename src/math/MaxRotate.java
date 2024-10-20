@@ -31,7 +31,7 @@ package math;
 
 public class MaxRotate {
 
-    public static long maxRot (long n) {
+    public static long solve(long n) {
 
         String num = String.valueOf(n);
 

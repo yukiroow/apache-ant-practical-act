@@ -2,7 +2,7 @@ package math;
 
 /**
 	[5 Kyu]
-	Write function square_sums_row ( or squareSumsRow or SquareSumsRow ) that, given integer 
+	Write function square_sums_row that, given integer 
 	number N (in range 2..43), returns array of integers 1..N arranged in a way, so sum of 
 	each 2 consecutive numbers is a square.
 	
@@ -16,7 +16,7 @@ public class SquareSums {
   private static Set<Integer> squares = new HashSet<>();
   private static List<List<Integer>> graph;
 
-  public static int[] squareSumsRow(int n) {
+  public static int[] solve(int n) {
     if (n < 2 || n > 43)
       return null;
 

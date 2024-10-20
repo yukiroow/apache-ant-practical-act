@@ -7,7 +7,7 @@ package math;
  */
 
 public class evenOrOdd {
-    public static String evenOrOdd(int number) {
+    public static String solve(int number) {
         if (number % 2 == 0) {
             return "Even";
         } else {
