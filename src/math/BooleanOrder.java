@@ -1,7 +1,6 @@
 package math;
 
 /**
- * 3 kyu
  * In this Kata, you will be given boolean values and boolean operators. Your task will be to return the number of
  * arrangements that evaluate to True.
  *
@@ -15,16 +14,11 @@ package math;
  */
 import java.math.BigInteger;
 
-public class BooleanOrder {
-    private final String operands;
-    private final String operators;
-
-    public BooleanOrder(final String operands, final String operators) {
-        this.operands = operands;
-        this.operators = operators;
-    }
-
-    public BigInteger solve() {
+public static class BooleanOrder {
+    /**
+     * Invoke Boolean Order Solution
+     */
+    public static BigInteger solve(String operands, String operators) {
         int n = operands.length();
         BigInteger[][] dpTrue = new BigInteger[n][n];
         BigInteger[][] dpFalse = new BigInteger[n][n];
@@ -73,10 +67,5 @@ public class BooleanOrder {
         }
 
         return dpTrue[0][n - 1];
-    }
-
-    public static void main(String[] args) {
-        BooleanOrder booleanOrder = new BooleanOrder("tft", "^&");
-        System.out.println("Number of ways to evaluate to true: " + booleanOrder.solve());
     }
 }

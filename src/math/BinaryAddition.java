@@ -1,8 +1,6 @@
 package math;
+
 /**
- * Sean Aromin
- * Binary Addition 7 kyu
- *
  * Implement a function that adds two numbers together and returns their sum in
  * binary. The conversion can be done before, or after the addition.
  *
@@ -13,7 +11,10 @@ package math;
  * 1, 1 --> "10" (1 + 1 = 2 in decimal or 10 in binary)
  * 5, 9 --> "1110" (5 + 9 = 14 in decimal or 1110 in binary)
  */
-public class BinaryAddition {
+public static class BinaryAddition {
+    /**
+     * Invoke BinaryAddition Solution
+     */
     public static String solve(int a, int b) {
 
         int sum = a + b;

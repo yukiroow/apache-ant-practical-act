@@ -1,21 +1,23 @@
 package math;
 
-/**
-	[5 Kyu]
-	Write function square_sums_row that, given integer 
-	number N (in range 2..43), returns array of integers 1..N arranged in a way, so sum of 
-	each 2 consecutive numbers is a square.
-	
-	Solution is valid if and only if following two criterias are met:
-		Each number in range 1..N is used once and only once.
-		Sum of each 2 consecutive numbers is a perfect square.	
-*/
 import java.util.*;
-
-public class SquareSums {
+/**
+ * Write function square_sums_row that, given integer
+ * number N (in range 2..43), returns array of integers 1..N arranged in a way,
+ * so sum of
+ * each 2 consecutive numbers is a square.
+ * 
+ * Solution is valid if and only if following two criterias are met:
+ * Each number in range 1..N is used once and only once.
+ * Sum of each 2 consecutive numbers is a perfect square.
+ */
+public static class SquareSums {
   private static Set<Integer> squares = new HashSet<>();
   private static List<List<Integer>> graph;
 
+  /**
+   * Invoke SquareSums Solution
+   */
   public static int[] solve(int n) {
     if (n < 2 || n > 43)
       return null;
@@ -54,6 +56,9 @@ public class SquareSums {
     return null;
   }
 
+  /**
+   * Depth-first Search Implementation
+   */
   private static boolean dfs(List<Integer> path, boolean[] used, int n) {
     if (path.size() == n) {
       return true;

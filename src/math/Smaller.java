@@ -1,12 +1,15 @@
 package math;
+
 /**
- * [3 kyu]
  * This is a hard version of How many are smaller than me?. If you have
  * troubles solving this one, have a look at the easier kata first.
  * Write function smaller(arr) that given an array arr, you have to
  * return the amount of numbers that are smaller than arr[i] to the right.
  */
-public class Smaller {
+public static class Smaller {
+    /**
+     * Invoke Smaller Solution
+     */
     public static int[] solve(int[] unsorted) {
         int n = unsorted.length;
         int[] result = new int[n];
@@ -19,6 +22,9 @@ public class Smaller {
         return result;
     }
 
+    /**
+     * Recursive merge sort and count
+     */
     private static void mergeSortAndCount(int[] nums, int[] indices, int[] result, int l, int r) {
         if (l < r) {
             int m = l + (r - l) / 2;
@@ -28,6 +34,9 @@ public class Smaller {
         }
     }
 
+    /**
+     * Merge and Count
+     */
     private static void mergeAndCount(int[] nums, int[] indices, int[] result, int l, int m, int r) {
         int n1 = m - l + 1;
         int n2 = r - m;

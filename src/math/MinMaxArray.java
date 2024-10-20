@@ -1,15 +1,15 @@
 package math;
-
+import java.util.Arrays;
 /**
- * {7 kyu}
  * The highest profit wins!
  *
  * Write a function that returns both the minimum
  * and maximum number of the given list/array.
  */
-import java.util.Arrays;
-
-public class MinMaxArray {
+public static class MinMaxArray {
+    /**
+     * Invoke MinMaxArray Solution
+     */
     public static int[] solve(int[] arr) {
         Arrays.sort(arr);
 

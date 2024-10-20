@@ -1,15 +1,9 @@
 package math;
 /**
- * Sean Aromin
- * Evaluate Mathematical Expression 2 kyu
- *
- * Instructions
  * Given a mathematical expression as a string you must return the result as a number.
  *
- * Numbers
- * Number may be both whole numbers and/or decimal numbers. The same goes for the returned result.
- *
- * Operators
+ * Numbers may be both whole numbers and/or decimal numbers. The same goes for the returned result.
+ * 
  * You need to support the following mathematical operators:
  *
  * Multiplication *
@@ -51,14 +45,11 @@ package math;
 
 import java.util.Stack;
 
-public class MathEvaluator {
-
-    public double calculate(String expression) {
-        return evaluate(expression);
-    }
-
-
-    public static double evaluate(String expression) {
+public static class MathEvaluator {
+    /**
+     * Invoke MathEvaluator Solution
+     */
+    public static double solve(String expression) {
         // Remove all whitespace from the expression
         expression = expression.replaceAll("\\s", "");
 

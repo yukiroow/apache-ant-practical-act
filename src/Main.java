@@ -1,4 +1,11 @@
+/**
+ * Main Class displaying a message to the User
+ */
 public class Main {
+    /**
+     * Main Method
+     * @param args
+     */
     public static void main(String[] args) {
         System.out.println(
             """

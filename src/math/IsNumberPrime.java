@@ -1,6 +1,5 @@
 package math;
 /**
- * {6 kyu}
  * Is a number prime?
  *
  * You can assume you will be given an integer input.
@@ -12,8 +11,11 @@ package math;
  * Looping all the way up to n, or n/2, will be too slow.
  */
 
-public class IsNumberPrime {
-    public static boolean isPrime(int num) {
+public static class IsNumberPrime {
+    /**
+     * Invoke IsNumberPrime Solution
+     */
+    public static boolean solve(int num) {
 
         boolean isPrime = true;
 
