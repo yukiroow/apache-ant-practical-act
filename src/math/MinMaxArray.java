@@ -10,7 +10,7 @@ public class MinMaxArray {
     /**
      * Invoke MinMaxArray Solution
      * @param arr an array of integers
-     * @return an array of two integers (min and max values)
+     * @return array of two integers (min and max values)
      */
     public static int[] solve(int[] arr) {
         Arrays.sort(arr);

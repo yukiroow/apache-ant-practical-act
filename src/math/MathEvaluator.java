@@ -48,7 +48,7 @@ import java.util.Stack;
 public class MathEvaluator {
     /**
      * Invoke MathEvaluator Solution
-     * @param expression a valid mathematical expression as a string
+     * @param expression valid mathematical expression as a string
      * @return result of the evaluated expression as a double
      */
     public static double solve(String expression) {

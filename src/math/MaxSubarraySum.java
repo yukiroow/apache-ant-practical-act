@@ -12,7 +12,7 @@ package math;
 public class MaxSubarraySum {
     /**
      * Invoke MaxSubarraySum Solution
-     * @param arr an array of integers
+     * @param arr array of integers
      * @return maximum sum of any contiguous subarray within the given array
      */
     public static int solve(int[] arr) {

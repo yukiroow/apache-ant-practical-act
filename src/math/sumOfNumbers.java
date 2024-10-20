@@ -13,7 +13,7 @@ public class SumOfNumbers {
      * Invoke SumOfNumbers Solution
      * @param a first number
      * @param b second number
-     * @return the sum of all integers between a and b
+     * @return  sum of all integers between a and b
      */
     public int solve(int a, int b) {
         int sum = 0;
