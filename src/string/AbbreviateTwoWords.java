@@ -4,7 +4,7 @@ package string;
  *
  * The output should be two capital letters with a dot separating them.
  */
-public static class AbbreviateTwoWords {
+public class AbbreviateTwoWords {
     /**
      * Invoke AbbreviateTwoWords Solution
      */

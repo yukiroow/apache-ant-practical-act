@@ -9,7 +9,7 @@ package math;
  * max_rot(38458215) should return 85821534
  */
 
-public static class MaxRotate {
+public class MaxRotate {
     /**
      * Invoke MaxRotate Solution
      */

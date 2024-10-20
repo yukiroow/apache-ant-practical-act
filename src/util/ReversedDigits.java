@@ -7,7 +7,7 @@ package util;
  * 35231 => [1,3,2,5,3]
  * 0 => [0]
  */
-public static class ReversedDigits {
+public class ReversedDigits {
     /**
      * Invoke ReversedDigits Solution
      */

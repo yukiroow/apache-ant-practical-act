@@ -8,7 +8,7 @@ package string;
  * ""             =>  ""
  */
 
-public static class CamelCase {
+public class CamelCase {
     /**
      * Invoke CamelCase Solution
      */

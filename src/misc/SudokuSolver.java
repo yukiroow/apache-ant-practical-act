@@ -7,7 +7,7 @@ package misc;
  * there will be no need to assume and test possibilities on unknowns) and can be solved with
  * a brute-force approach.
  */
-public static class SudokuSolver {
+public class SudokuSolver {
     /**
      * Invoke SudokuSolver Solution
      */

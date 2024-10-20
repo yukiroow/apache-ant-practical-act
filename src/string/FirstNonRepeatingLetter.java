@@ -5,7 +5,7 @@ package string;
  * As an added challenge, upper- and lowercase letters are considered the same
  * character, but the function should return the correct case for the initial letter.
  */
-public static class FirstNonRepeatingLetter {
+public class FirstNonRepeatingLetter {
     /**
      * Invoke FirstNonRepeatingLetter Solution
      */

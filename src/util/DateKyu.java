@@ -3,7 +3,7 @@ package util;
  * This Class contains different CodeWars Katas that are related
  * to Dates and Time one way or another,
  */
-public static class DateKyu {
+public class DateKyu {
     /**
      * I have a cat and a dog. I got them at the same time as kitten/puppy. That was
      * humanYears years ago.

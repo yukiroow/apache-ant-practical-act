@@ -5,7 +5,7 @@ package util;
  * Finish the solution so that it returns the sum of all the multiples
  * of 3 or 5 below the number passed in.
  */
-public static class Multiples3or5 {
+public class Multiples3or5 {
     /**
      * Invoke Multiples3or5 Solution
      */

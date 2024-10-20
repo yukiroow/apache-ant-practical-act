@@ -6,7 +6,7 @@ package math;
  * ArraysFundamentals
  */
 
-public static class SumOfPositive {
+public class SumOfPositive {
     /**
      * Invoke SumOfPositive Solution
      */

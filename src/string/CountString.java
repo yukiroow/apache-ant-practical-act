@@ -4,7 +4,7 @@ package string;
  *
  * If no occurrences can be found, a count of 0 should be returned.
  */
-public static class CountString {
+public class CountString {
     /**
      * Invoke CountString Solution
      */

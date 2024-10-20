@@ -6,7 +6,7 @@ package math;
  * Write function smaller(arr) that given an array arr, you have to
  * return the amount of numbers that are smaller than arr[i] to the right.
  */
-public static class Smaller {
+public class Smaller {
     /**
      * Invoke Smaller Solution
      */

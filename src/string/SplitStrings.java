@@ -6,7 +6,7 @@ import java.util.List;
  * If the string contains an odd number of characters then it should replace the
  * missing second character of the final pair with an underscore ('_').
  */
-public static class SplitStrings {
+public class SplitStrings {
     /**
      * Invoke SplitStrings Solution
      */

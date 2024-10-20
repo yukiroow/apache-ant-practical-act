@@ -7,7 +7,7 @@ package math;
  * are equal return a or b.
  */
 
-public static class SumOfNumbers {
+public class SumOfNumbers {
 
     /**
      * Invoke SumOfNumbers Solution

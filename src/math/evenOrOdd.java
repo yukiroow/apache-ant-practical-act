@@ -4,7 +4,7 @@ package math;
  * and returns "Even" for even numbers or "Odd" for odd numbers.
  */
 
-public static class EvenOrOdd {
+public class EvenOrOdd {
     /**
      * Invoke EvenOrOdd Solution
      */

@@ -6,7 +6,7 @@ package misc;
  * [Make sure you type the exact thing I wrote or the program may not execute
  * properly]
  */
-public static class ReturningStrings {
+public class ReturningStrings {
     /**
      * Invoke ReturningStrings Solution
      */

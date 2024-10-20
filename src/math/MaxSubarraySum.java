@@ -9,7 +9,7 @@ package math;
  * Empty list is considered to have zero greatest sum. Note that the empty list or array is also a valid sublist/subarray.
  */
 
-public static class MaxSubarraySum {
+public class MaxSubarraySum {
     /**
      * Invoke MaxSubarraySum Solution
      */

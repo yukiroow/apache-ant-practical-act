@@ -11,7 +11,7 @@ import java.util.*;
  * Each number in range 1..N is used once and only once.
  * Sum of each 2 consecutive numbers is a perfect square.
  */
-public static class SquareSums {
+public class SquareSums {
   private static Set<Integer> squares = new HashSet<>();
   private static List<List<Integer>> graph;
 

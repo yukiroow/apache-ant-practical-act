@@ -10,7 +10,7 @@ import java.util.Collections;
  * Input: 145263 Output: 654321
  * Input: 123456789 Output: 987654321
  */
-public static class DescendingOrder {
+public class DescendingOrder {
     /**
      * Invoke DescendingOrder Solution
      */

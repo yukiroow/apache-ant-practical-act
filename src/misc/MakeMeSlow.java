@@ -3,7 +3,7 @@ package misc;
 /**
  * Make me slow! Calling makeMeSlow() should take at least 7 seconds.
  */
-public static class MakeMeSlow {
+public class MakeMeSlow {
     /**
      * Invoke MakeMeSlow Solution
      */

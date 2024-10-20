@@ -5,7 +5,7 @@ package string;
  * We will consider a, e, i, o, u as vowels for this Kata (but not y).
  * The input string will only consist of lower case letters and/or spaces.
  */
-public static class VowelCount {
+public class VowelCount {
     /**
      * Invoke VowelCount Solution
      */

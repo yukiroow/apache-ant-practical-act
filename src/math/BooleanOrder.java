@@ -14,7 +14,7 @@ package math;
  */
 import java.math.BigInteger;
 
-public static class BooleanOrder {
+public class BooleanOrder {
     /**
      * Invoke Boolean Order Solution
      */

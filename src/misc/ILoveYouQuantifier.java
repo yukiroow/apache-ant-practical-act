@@ -7,7 +7,7 @@ package misc;
  * for a flower of a given number of petals. The number of
  * petals is always greater than 0.
  */
-public static class ILoveYouQuantifier {
+public class ILoveYouQuantifier {
     /**
      * Invoke ILoveYouQuantifier Solution
      */

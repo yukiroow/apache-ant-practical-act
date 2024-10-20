@@ -6,7 +6,7 @@ package string;
  * reverse direction and move diagonally and up until you reach the top rail. Continue until you
  * reach the end of the string. Each "rail" is then read left to right to derive the encoded string.
  */
-public static class RailFenceCipher {
+public class RailFenceCipher {
     /**
      * Invoke Encode Solution
      */

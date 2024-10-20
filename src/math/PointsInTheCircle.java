@@ -5,7 +5,7 @@ package math;
  * Write a function that calculates the number of points in the circle where
  * (x,y) - the cartesian coordinates of the points - are integers.
  */
-public static class PointsInTheCircle {
+public class PointsInTheCircle {
     /**
      * Invoke PointsInTheCircle Solution
      */

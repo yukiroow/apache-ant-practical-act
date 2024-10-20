@@ -8,7 +8,7 @@ package string;
  * If the input string is empty, return an empty string. The words in the input String will only contain valid
  * consecutive numbers.
  */
-public static class Order {
+public class Order {
     /**
      * Invoke Order Solution
      */

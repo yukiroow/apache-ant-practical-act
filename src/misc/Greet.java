@@ -2,7 +2,7 @@ package misc;
 /**
  * Create a function that gives a personalized greeting. This function takes two parameters: name and owner.
  */
-public static class Greet {
+public class Greet {
     /**
      * Invoke BinaryAddition Solution
      */

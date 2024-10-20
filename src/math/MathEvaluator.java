@@ -45,7 +45,7 @@ package math;
 
 import java.util.Stack;
 
-public static class MathEvaluator {
+public class MathEvaluator {
     /**
      * Invoke MathEvaluator Solution
      */

@@ -3,7 +3,7 @@ import java.util.List;
 /**
  * Implement a function that returns the minimal and the maximal value of a list (in this order).
  */
-public static class MinMax {
+public class MinMax {
     /**
      * Invoke MinMax Solution
      */

@@ -6,7 +6,7 @@ package misc;
  * race has a certain worth when battling against others. On the side of good we
  * have the following races, with their associated worth:
  */
-public static class GoodVsEvil {
+public class GoodVsEvil {
   /**
    * Invoke GoodVsEvil Solution
    */

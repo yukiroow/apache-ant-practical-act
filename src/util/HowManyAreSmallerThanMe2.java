@@ -8,7 +8,7 @@ import java.util.Map;
  * that are smaller than arr[i] to the right.
  */
 
-public static class HowManyAreSmallerThanMe2 {
+public class HowManyAreSmallerThanMe2 {
     /**
      * Invoke HowManyAreSmallerThanMe2 Solution
      */

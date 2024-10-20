@@ -11,7 +11,7 @@ package math;
  * Looping all the way up to n, or n/2, will be too slow.
  */
 
-public static class IsNumberPrime {
+public class IsNumberPrime {
     /**
      * Invoke IsNumberPrime Solution
      */
