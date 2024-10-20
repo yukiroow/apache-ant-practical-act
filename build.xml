@@ -5,8 +5,6 @@
     <!-- Create Required Directories -->
     <target name="init" description="Create required directories">
         <mkdir dir="${buildpath}" />
-        <mkdir dir="${jarpath}" />
-        <mkdir dir="${docspath}" />
     </target>
 
     <!-- Delete the build directory -->
@@ -30,7 +28,8 @@
     </target>
 
     <!-- Generate a Javadoc HTML Documentation -->
-    <target name="doc" depends="init" description="Generate Documentation">
+    <target name="doc" description="Generate Documentation">
+        <mkdir dir="${docspath}" />
         <javadoc destdir="${docspath}" sourcepath="${sourcepath}"
             windowtitle="Team 3 Source Codes">
             <doctitle><![CDATA[= Team 3 Source Codes =]]></doctitle>
@@ -53,6 +52,7 @@
     <!-- Generate a JAR File of the Source Code -->
     <target name="jar-src" depends="compile"
         description="Generate a JAR File of the source code">
+        <mkdir dir="${jarpath}" />
         <jar destfile="${jarpath}/team3-src.jar"
             basedir="${buildpath}"
             update="true">
@@ -66,9 +66,11 @@
     <!-- Generate a JAR File of the Javadoc HTML Documentation -->
     <target name="jar-doc" depends="doc"
         description="Generate a JAR File containing the Source Code Documentation">
+        <mkdir dir="${jarpath}" />
         <jar destfile="${jarpath}/team3-documentation.jar"
             basedir="${docspath}"
             update="true"
         />
+        <delete dir="${docspath}" />
     </target>
 </project>
