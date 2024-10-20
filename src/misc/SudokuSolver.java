@@ -10,6 +10,8 @@ package misc;
 public class SudokuSolver {
     /**
      * Invoke SudokuSolver Solution
+     * @param puzzle
+     * @return 
      */
     public static int[][] sudoku(int[][] puzzle) {
         solve(puzzle);
@@ -18,6 +20,8 @@ public class SudokuSolver {
 
     /**
      * Solve the given 2D Array puzzle
+     * @param puzzle
+     * @return 
      */
     private static boolean solve(int[][] puzzle) {
         for (int row = 0; row < 9; row++) {
@@ -42,6 +46,11 @@ public class SudokuSolver {
 
     /**
      * Check if current state is valid
+     * @param puzzle
+     * @param row
+     * @param col
+     * @param num
+     * @return 
      */
     private static boolean isValid(int[][] puzzle, int row, int col, int num) {
         // Check row

@@ -48,6 +48,8 @@ import java.util.Stack;
 public class MathEvaluator {
     /**
      * Invoke MathEvaluator Solution
+     * @param expression
+     * @return 
      */
     public static double solve(String expression) {
         // Remove all whitespace from the expression
@@ -100,6 +102,11 @@ public class MathEvaluator {
         return numbers.pop();
     }
 
+    /**
+     * Evaluate Top
+     * @param numbers
+     * @param operators
+     */
     private static void evaluateTop(Stack<Double> numbers, Stack<Character> operators) {
         char op = operators.pop();
         double b = numbers.pop();

@@ -1,6 +1,7 @@
 package math;
 
 import java.util.*;
+
 /**
  * Write function square_sums_row that, given integer
  * number N (in range 2..43), returns array of integers 1..N arranged in a way,
@@ -17,6 +18,9 @@ public class SquareSums {
 
   /**
    * Invoke SquareSums Solution
+   * 
+   * @param n
+     * @return 
    */
   public static int[] solve(int n) {
     if (n < 2 || n > 43)
@@ -58,6 +62,10 @@ public class SquareSums {
 
   /**
    * Depth-first Search Implementation
+   * 
+   * @param path
+   * @param n
+     * @return 
    */
   private static boolean dfs(List<Integer> path, boolean[] used, int n) {
     if (path.size() == n) {

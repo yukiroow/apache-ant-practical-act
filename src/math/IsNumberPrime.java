@@ -14,6 +14,8 @@ package math;
 public class IsNumberPrime {
     /**
      * Invoke IsNumberPrime Solution
+     * @param num
+     * @return 
      */
     public static boolean solve(int num) {
 

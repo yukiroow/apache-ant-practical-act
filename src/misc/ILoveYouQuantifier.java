@@ -10,6 +10,8 @@ package misc;
 public class ILoveYouQuantifier {
     /**
      * Invoke ILoveYouQuantifier Solution
+     * @param nb_petals
+     * @return 
      */
     public static String howMuchILoveYou(int nb_petals) {
 

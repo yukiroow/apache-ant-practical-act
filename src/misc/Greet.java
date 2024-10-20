@@ -5,6 +5,9 @@ package misc;
 public class Greet {
     /**
      * Invoke BinaryAddition Solution
+     * @param name
+     * @param owner
+     * @return 
      */
     public static String greet(String name, String owner) {
         if(name.equals(owner)) {

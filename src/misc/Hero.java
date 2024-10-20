@@ -12,6 +12,7 @@ public class Hero {
 
   /**
    * Construct a Hero with a name
+     * @param name
    */
   public Hero(String name) {
     this.name = name;

@@ -8,6 +8,8 @@ package math;
 public class PointsInTheCircle {
     /**
      * Invoke PointsInTheCircle Solution
+     * @param radius
+     * @return 
      */
     public static int solve(int radius) {
         int count = 0;

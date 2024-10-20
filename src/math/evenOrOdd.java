@@ -7,6 +7,8 @@ package math;
 public class EvenOrOdd {
     /**
      * Invoke EvenOrOdd Solution
+     * @param number
+     * @return 
      */
     public static String solve(int number) {
         if (number % 2 == 0) {

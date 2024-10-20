@@ -5,6 +5,8 @@ package string;
 public class StringToArray {
     /**
      * Invoke StringToArray Solution
+     * @param s
+     * @return 
      */
     public static String[] stringToArray(String s) {
         String [] words = s.split(" ");

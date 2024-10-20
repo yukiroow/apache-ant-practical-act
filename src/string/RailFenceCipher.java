@@ -9,6 +9,9 @@ package string;
 public class RailFenceCipher {
     /**
      * Invoke Encode Solution
+     * @param s
+     * @param n
+     * @return 
      */
     public static String encode(String s, int n) {
         if (n ==1){
@@ -38,6 +41,9 @@ public class RailFenceCipher {
 
     /**
      * Invoke Decode Solution
+     * @param s
+     * @param n
+     * @return 
      */
     public static String decode(String s, int n) {
         if (n == 1) return s;

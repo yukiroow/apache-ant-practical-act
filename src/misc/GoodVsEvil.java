@@ -9,6 +9,9 @@ package misc;
 public class GoodVsEvil {
   /**
    * Invoke GoodVsEvil Solution
+     * @param goodAmounts
+     * @param evilAmounts
+     * @return 
    */
   public static String battle(String goodAmounts, String evilAmounts) {
     int goodScore = 0;

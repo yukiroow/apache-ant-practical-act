@@ -11,6 +11,8 @@ import java.util.Map;
 public class HowManyAreSmallerThanMe2 {
     /**
      * Invoke HowManyAreSmallerThanMe2 Solution
+     * @param arr
+     * @return 
      */
     public static int[] smaller(int[] arr) {
         int n = arr.length;
@@ -41,6 +43,9 @@ public class HowManyAreSmallerThanMe2 {
 
     /**
      * Update Method
+     * @param BIT
+     * @param index
+     * @param value
      */
     private static void updateBIT(int[] BIT, int index, int value) {
         while (index < BIT.length) {
@@ -51,6 +56,9 @@ public class HowManyAreSmallerThanMe2 {
 
     /**
      * Query Method
+     * @param BIT
+     * @param index
+     * @return 
      */
     private static int queryBIT(int[] BIT, int index) {
         int sum = 0;

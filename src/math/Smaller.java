@@ -9,6 +9,8 @@ package math;
 public class Smaller {
     /**
      * Invoke Smaller Solution
+     * @param unsorted
+     * @return 
      */
     public static int[] solve(int[] unsorted) {
         int n = unsorted.length;
@@ -24,6 +26,11 @@ public class Smaller {
 
     /**
      * Recursive merge sort and count
+     * @param nums
+     * @param indices
+     * @param result
+     * @param l
+     * @param r
      */
     private static void mergeSortAndCount(int[] nums, int[] indices, int[] result, int l, int r) {
         if (l < r) {
@@ -36,6 +43,12 @@ public class Smaller {
 
     /**
      * Merge and Count
+     * @param nums
+     * @param indices
+     * @param result
+     * @param l
+     * @param m
+     * @param r
      */
     private static void mergeAndCount(int[] nums, int[] indices, int[] result, int l, int m, int r) {
         int n1 = m - l + 1;

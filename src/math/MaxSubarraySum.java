@@ -12,6 +12,8 @@ package math;
 public class MaxSubarraySum {
     /**
      * Invoke MaxSubarraySum Solution
+     * @param arr
+     * @return 
      */
     public static int solve(int[] arr) {
         int max = 0;

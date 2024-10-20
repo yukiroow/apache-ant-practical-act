@@ -9,6 +9,8 @@ package math;
 public class SumOfPositive {
     /**
      * Invoke SumOfPositive Solution
+     * @param arr
+     * @return 
      */
     public static int solve(int[] arr) {
         int total = 0;

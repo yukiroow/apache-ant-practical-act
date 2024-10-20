@@ -17,6 +17,9 @@ import java.math.BigInteger;
 public class BooleanOrder {
     /**
      * Invoke Boolean Order Solution
+     * @param operands
+     * @param operators
+     * @return 
      */
     public static BigInteger solve(String operands, String operators) {
         int n = operands.length();
