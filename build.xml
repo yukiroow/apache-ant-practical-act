@@ -53,7 +53,7 @@
     <!-- Generate a JAR File of the Source Code -->
     <target name="jar-src" depends="compile"
         description="Generate a JAR File of the source code">
-        <jar destfile="${jarpath}/team3-${sourcepath}.jar"
+        <jar destfile="${jarpath}/team3-src.jar"
             basedir="${buildpath}"
             update="true">
             <manifest>
@@ -70,6 +70,5 @@
             basedir="${docspath}"
             update="true"
         />
-        <antcall target="clean" />
     </target>
 </project>
