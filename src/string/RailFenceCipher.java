@@ -1,14 +1,16 @@
 package string;
 /**
- * [3 kyu]
  * Create two functions to encode and then decode a string using the Rail Fence Cipher.
  * This cipher is used to encode a string by placing each character successively in a diagonal
  * along a set of "rails". First start off moving diagonally and down. When you reach the bottom,
  * reverse direction and move diagonally and up until you reach the top rail. Continue until you
  * reach the end of the string. Each "rail" is then read left to right to derive the encoded string.
  */
-public class RailFenceCipher {
-    static String encode(String s, int n) {
+public static class RailFenceCipher {
+    /**
+     * Invoke Encode Solution
+     */
+    public static String encode(String s, int n) {
         if (n ==1){
             return s;
         }
@@ -34,7 +36,10 @@ public class RailFenceCipher {
         return encoded.toString();
     }
 
-    static String decode(String s, int n) {
+    /**
+     * Invoke Decode Solution
+     */
+    public static String decode(String s, int n) {
         if (n == 1) return s;
         boolean[] direction = new boolean[s.length()];
         int index = 0;

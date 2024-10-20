@@ -1,8 +1,5 @@
 package string;
 /**
- * Sean Aromin
- * Break camelCase 6 kyu
- *
  * Complete the solution so that the function will break up camel casing, using a space between words.
  *
  * Example
@@ -11,7 +8,10 @@ package string;
  * ""             =>  ""
  */
 
-public class CamelCase {
+public static class CamelCase {
+    /**
+     * Invoke CamelCase Solution
+     */
     public static String camelCase(String input) {
 
         String answer = "";

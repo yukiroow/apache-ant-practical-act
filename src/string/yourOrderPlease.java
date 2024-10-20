@@ -1,8 +1,6 @@
 package string;
+
 /**
- * {6 kyu}
- * Your order, please
- *
  * Your task is to sort a given string. Each word in the string
  * will contain a single number. This number is the position
  * the word should have in the result.
@@ -16,6 +14,9 @@ package string;
  */
 
 public class YourOrderPlease {
+    /**
+     * Invoke YourOrderPlease Solution
+     */
     public static String order(String words) {
         // ...
         if (words == null || words.isEmpty()) {

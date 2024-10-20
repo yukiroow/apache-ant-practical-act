@@ -1,6 +1,5 @@
 package string;
 /**
- * 6 kyu
  * Your task is to sort a given string. Each word in the string will contain a single number. This number is the
  * position the word should have in the result.
  *
@@ -9,7 +8,10 @@ package string;
  * If the input string is empty, return an empty string. The words in the input String will only contain valid
  * consecutive numbers.
  */
-public class Order {
+public static class Order {
+    /**
+     * Invoke Order Solution
+     */
     public static String order(String words) {
         if (words.isEmpty()) {
             return "";
