@@ -1,14 +1,15 @@
 package misc;
 
 /**
- * [6 Kyu]
  * Middle Earth is about to go to war. The forces of good will have many battles
  * with the forces of evil. Different races will certainly be involved. Each
- * race
- * has a certain worth when battling against others. On the side of good we have
- * the following races, with their associated worth:
+ * race has a certain worth when battling against others. On the side of good we
+ * have the following races, with their associated worth:
  */
-public class GoodVsEvil {
+public static class GoodVsEvil {
+  /**
+   * Invoke GoodVsEvil Solution
+   */
   public static String battle(String goodAmounts, String evilAmounts) {
     int goodScore = 0;
     int badScore = 0;

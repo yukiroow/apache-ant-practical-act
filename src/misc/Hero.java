@@ -1,9 +1,7 @@
 package misc;
 
 /**
- * [8 Kyu]
- * In this first kata in the series, you need to define a
- * Hero prototype to be used in a terminal game.
+ * In this first kata in the series, you need to define a Hero prototype to be used in a terminal game.
  */
 public class Hero {
   String name = "Hero";
@@ -12,10 +10,16 @@ public class Hero {
   int damage = 5;
   int experience = 0;
 
+  /**
+   * Construct a Hero with a name
+   */
   public Hero(String name) {
     this.name = name;
   }
 
+  /**
+   * Default Constructor
+   */
   public Hero() {
     super();
   }
