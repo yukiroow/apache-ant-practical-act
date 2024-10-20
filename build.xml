@@ -1,74 +1,75 @@
 <?xml version="1.0"?>
-<project name="9472-Team03_Kotlin_MidAct02-Ant" default="javadoc.package">
-    <target name="init">
-        <echo>9472 App Development Team 3: Kotlin</echo>
-        <echo>Midterm Lab Activity 2</echo>
-        <mkdir dir="build" />
-        <mkdir dir="build\production" />
+<project name="9472-Team03_Kotlin_MidAct02-Ant" default="jar-src">
+    <property file="build.properties"/>
+    
+    <!-- Create Required Directories -->
+    <target name="init" description="Create required directories">
+        <mkdir dir="${buildpath}" />
+        <mkdir dir="${jarpath}" />
+        <mkdir dir="${docspath}" />
     </target>
 
-    <!-- 
-    If input is 'y', compile all classes and respective documentation.
-    Otherwise, prompt user again to select which package to compile.
-     -->
-    <target name="readmode" depends="init">
-        <input message="Would you like to compile all the classes or only a package?"
-            validargs="all,package"
-            addproperty="compile.mode" />
-
-        <condition property="is.all">
-            <equals arg1="${compile.mode}" arg2="all" />
-        </condition>
-
-        <condition property="is.package">
-            <equals arg1="${compile.mode}" arg2="package" />
-        </condition>
+    <!-- Delete the build directory -->
+    <target name="clean" description="Clean build files">
+        <delete dir="${buildpath}" />
     </target>
 
-    <target name="compile.all" depends="readmode" if="is.all">
-        <javac srcdir="src" destdir="build" includes="**/*.java" />
-        <javac srcdir="src" destdir="build" includes="Main.java" />
+    <!-- Compile all the source code in the src directory -->
+    <target name="compile" depends="init" description="Compile all the source code">
+        <javac srcdir="${sourcepath}" destdir="${buildpath}" includes="**/*.java" includeantruntime="true" />
+        <javac srcdir="${sourcepath}" destdir="${buildpath}" includes="Main.java" includeantruntime="true" />
     </target>
 
-    <target name="compile.package" depends="compile.all" if="is.package">
-        <input message="Please enter the package name: "
+    <!-- Compile a specified package in the src directory -->
+    <target name="compile-package" depends="init" description="Compile a specified package">
+        <input message="Please enter the package name:"
             validargs="math,misc,string,util"
             addproperty="package.name" />
-        <javac srcdir="src/${package.name}" destdir="build" includes="**/*.java" />
-        <javac srcdir="src" destdir="build" includes="Main.java" />
+        <javac srcdir="${sourcepath}/${package.name}" destdir="${buildpath}" includes="**/*.java"
+            includeantruntime="true" />
     </target>
 
-    <target name="javadoc.all" depends="compile.package" if="is.all">
-        <javadoc destdir="build/docs" sourcepath="src" packagenames="."
+    <!-- Generate a Javadoc HTML Documentation -->
+    <target name="doc" depends="init" description="Generate Documentation">
+        <javadoc destdir="${docspath}" sourcepath="${sourcepath}" packagenames="."
             windowtitle="Team 3 Source Codes">
             <doctitle><![CDATA[= Team 3 Source Codes =]]></doctitle>
-            <group title="math packages" packages="math" />
-            <group title="misc packages" packages="misc" />
-            <group title="string packages" packages="string" />
-            <group title="util packages" packages="util" />
             <bottom>
-                <![CDATA[Copyright © 2024. All Rights Reserved.]]>
+                <![CDATA[Copyright Team Kotl© 2024. All Rights Reserved.]]>
              </bottom>
         </javadoc>
     </target>
 
-    <target name="javadoc.package" depends="javadoc.all" if="is.package">
-        <javadoc destdir="build/docs" sourcepath="src" packagenames="${package.name}"
-            windowtitle="Team 3 Source Codes">
-            <doctitle><![CDATA[= Team 3 Source Codes =]]></doctitle>
-            <group title="${package.name} packages" packages="${package.name}" />
-            <bottom>
-                <![CDATA[Copyright © 2024. All Rights Reserved.]]>
-             </bottom>
-        </javadoc>
+    <!-- Compile all the source code and execute the Main Class -->
+    <target name="execute" depends="compile" description="Compile all the source code and execute the Main Class">
+        <java fork="true" failonerror="yes" classname="Main">
+            <classpath>
+                <pathelement path="${buildpath}" />
+            </classpath>
+        </java>
+        <antcall target="clean" />
     </target>
 
-    <target name="jar.javadoc" depends>
-        <jar destfile="build/production/team3-documentation.jar"
-            basedir="build/doc"
-            includes="build/doc/**"
-            excludes="build/**.class"
+    <!-- Generate a JAR File of the Source Code -->
+    <target name="jar-src" depends="compile"
+        description="Generate a JAR File of the source code">
+        <jar destfile="${jarpath}/team3-${sourcepath}.jar"
+            basedir="${buildpath}"
+            update="true">
+            <manifest>
+                <attribute name="Main-Class" value="Main" />
+            </manifest>
+        </jar>
+        <antcall target="clean" />
+    </target>
+
+    <!-- Generate a JAR File of the Javadoc HTML Documentation -->
+    <target name="jar-doc" depends="doc"
+        description="Generate a JAR File containing the Source Code Documentation">
+        <jar destfile="${jarpath}/team3-documentation.jar"
+            basedir="${docspath}"
             update="true"
         />
+        <antcall target="clean" />
     </target>
 </project>

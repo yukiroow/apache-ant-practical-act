@@ -9,7 +9,7 @@ public class Main {
             __|  |:|      /  /:/  \\:\\    /  /:/    /__/\\   /  /\\
            /__/\\_|:|____ /__/:/ \\__\\:\\  /  /::\\    \\  \\:\\ /  /:/
            \\  \\:\\/:::::/ \\  \\:\\ /  /:/ /__/:/\\:\\    \\  \\:\\  /:/ 
-            \\  \\::/~~~~   \\  \\:\\  /:/  \\__\\/  \\:\\    \\  \\:\\/:/  
+            \\  \\::/----   \\  \\:\\  /:/  \\__\\/  \\:\\    \\  \\:\\/:/  
              \\  \\:\\        \\  \\:\\/:/        \\  \\:\\    \\  \\::/   
               \\  \\:\\        \\  \\::/          \\__\\/     \\__\\/    
                \\__\\/         \\__\\/                              
@@ -20,7 +20,7 @@ public class Main {
   /____/\\____   | /____/ \\_______ \\   |____| \\___  >____  /__|_|  / /______  /
              |__|                \\/              \\/     \\/      \\/         \\/ 
           
-This JAR file contains compiled Java classes of different "Katas" from the Code Wars Platform.    
+This Java Project contains compiled Java classes of different "Katas" from the Code Wars Platform.    
             """
         );
     }
